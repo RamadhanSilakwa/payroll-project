@@ -86,16 +86,23 @@
     <h1 style="color: black;">NET PAY CALCULATOR</h1>
 <P><b>>Enter your gross salary below and benefits to calculate your net pay</b</P>
 <div class="form" style="margin-bottom: 50px;">
+  
   <form id="my_form" >
-    <label>Basic salary </label>
-    <input type="text" name="fname" id="bsalary">
-    <label>Benefits</label>
-    <input type="text" name="lname" id="benefit">
-    <input type="submit" value="calculate" style="background-color: yellow; color: red;">
+    <div class="col-md-6">
+      <label>Basic salary </label>
+      <input type="text" name="fname" id="bsalary">
+    </div>
+    <div class="col-md-6">
+      <label>Benefits</label>
+      <input type="text" name="lname" id="benefit">
+      <input type="submit" value="calculate" style="background-color: yellow; color: red;">
+    </div>
+    
+    
 </form>
 </div>
- 
-<table id="my_table" border="1" style="  width: 700px; height: 480px; border: solid; color:black">
+<div class="col-lg-12">
+  <table id="my_table" border="1" style="  width: 700px; height: 480px; border: solid; color:black">
     <th>Description</th>
     <th>Results</th>
     <tr>
@@ -127,6 +134,10 @@
         <td id="Net_pay"></td>
     </tr>
 </table>
+
+</div>
+ 
+
 
 
 </div>
