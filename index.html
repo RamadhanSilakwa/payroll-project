@@ -44,9 +44,10 @@
         <div class="container">
 
           <div class="body">
-            <img src="payroll-logo.png">
+            <div class="col-lg-3"><img src="payroll-logo.png"></div>
+            
 
-            <div class="nav" style="float:right; margin-left:40px; background-color: black; ">
+            <!-- <div class="nav" style="float:right; margin-left:40px; background-color: black; "> -->
 
               
                     
@@ -77,58 +78,61 @@
                     
                   </nav> -->
 
-            </div>
+            <!-- </div> -->
+
+<div class="col-lg-12">
+
+  <div class="calc-b" style="margin-top: 50px;">
+    <h1 style="color: black;">NET PAY CALCULATOR</h1>
+<P><b>>Enter your gross salary below and benefits to calculate your net pay</b</P>
+<div class="form" style="margin-bottom: 50px;">
+  <form id="my_form" >
+    <label>Basic salary </label>
+    <input type="text" name="fname" id="bsalary">
+    <label>Benefits</label>
+    <input type="text" name="lname" id="benefit">
+    <input type="submit" value="calculate" style="background-color: yellow; color: red;">
+</form>
+</div>
+ 
+<table id="my_table" border="1" style="  width: 700px; height: 480px; border: solid; color:black">
+    <th>Description</th>
+    <th>Results</th>
+    <tr>
+        <td >Gross salary</td>
+        <td id="Gross_salary"></td>
+    </tr>
+    <tr>
+        <td>NSSF</td>
+        <td id="NSSF"></td>
+    </tr>
+    <tr>
+        <td>NHDF</td>
+        <td id="NHDF"></td>
+    </tr>
+    <tr>
+        <td>Final payee</td>
+        <td id="Final_payee"></td>
+    </tr>
+    <tr>
+        <td>NHIF</td>
+        <td id="NHIF"></td>
+    </tr>
+    <tr>
+        <td>Taxable income</td>
+        <td id="Taxable_income"></td>
+    </tr>
+    <tr>
+        <td>Net pay</td>
+        <td id="Net_pay"></td>
+    </tr>
+</table>
 
 
-            <div class="calc-b" style="margin-top: 50px;">
-                <h1 style="color: black;">NET PAY CALCULATOR</h1>
-            <P><b>>Enter your gross salary below and benefits to calculate your net pay</b</P>
-            <div class="form" style="margin-bottom: 50px;">
-              <form id="my_form" >
-                <label>Basic salary </label>
-                <input type="text" name="fname" id="bsalary">
-                <label>Benefits</label>
-                <input type="text" name="lname" id="benefit">
-                <input type="submit" value="calculate" style="background-color: yellow; color: red;">
-            </form>
-            </div>
-             
-            <table id="my_table" border="1" style="  width: 700px; height: 480px; border: solid; color:black">
-                <th>Description</th>
-                <th>Results</th>
-                <tr>
-                    <td >Gross salary</td>
-                    <td id="Gross_salary"></td>
-                </tr>
-                <tr>
-                    <td>NSSF</td>
-                    <td id="NSSF"></td>
-                </tr>
-                <tr>
-                    <td>NHDF</td>
-                    <td id="NHDF"></td>
-                </tr>
-                <tr>
-                    <td>Final payee</td>
-                    <td id="Final_payee"></td>
-                </tr>
-                <tr>
-                    <td>NHIF</td>
-                    <td id="NHIF"></td>
-                </tr>
-                <tr>
-                    <td>Taxable income</td>
-                    <td id="Taxable_income"></td>
-                </tr>
-                <tr>
-                    <td>Net pay</td>
-                    <td id="Net_pay"></td>
-                </tr>
-            </table>
+</div>
 
-
-            </div>
-           
+</div>
+            
             
             
           </div>
