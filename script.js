@@ -50,7 +50,8 @@ function calc_taxable_income(gross_salary,nssf,nhdf){
 }
 function calc_payee(taxable_income){
     if (taxable_income <=24000){
-        payee=(taxable_income*0.01)-(2400)
+        payee=0
+        // payee=(taxable_income*0.01)-(2400)
     }else if(taxable_income>24000 &&taxable_income<32333){
         payee=(24000*0.1)+(taxable_income-24000)*0.25-(2400)
     }else{payee=(2400*0.1)+(taxable_income-24000)*0.25 +(taxable_income-32333)*0.3-(2400)
